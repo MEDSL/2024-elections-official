@@ -61,9 +61,9 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Delaware
 
-*Added:*
+*Added:* 2024-11-13
 
-*Source:*
+*Source:* https://elections.delaware.gov/results/html/index.shtml?electionId=GE2024
 
 ### District of Columbia
 
