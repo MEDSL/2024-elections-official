@@ -1,6 +1,6 @@
 # 2024-elections-official
 
-![](precinct_progress_map_.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2024 General Election in the United States. We have begun compiling precinct-level election results. If you notice any issues in our results, please open an Issue in this repository. 
