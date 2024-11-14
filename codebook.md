@@ -75,4 +75,6 @@ The date of the primary/election. Note that there will be some states with diffe
 ### magnitude:
 The number of seats to be filled, usually equal to the number of votes an elector can cast for the office. For local offices, the magnitude value may be empty, which signifies that we were not able to directly verify that office's magnitude
 
+---
+
 **Note**:  A variable called `readme_check` was included in our 2018, 2020, and 2022 precinct data, but is discontinued starting in 2024. The readme contains information that is relevant to every row of the dataset.
