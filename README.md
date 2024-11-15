@@ -230,9 +230,9 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Oklahoma
 
-*Added:*
+*Added:* 2024-11-14
 
-*Source:*
+*Source:* https://results.okelections.gov/OKER/?elecDate=20241105
 
 ### Ohio
 
