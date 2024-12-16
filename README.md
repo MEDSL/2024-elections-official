@@ -175,9 +175,9 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Montana
 
-*Added:*
+*Added:* 2024-12-16
 
-*Source:*
+*Source:* https://electionresults.mt.gov/ResultsSW.aspx
 
 ### Nebraska
 
