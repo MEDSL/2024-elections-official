@@ -272,9 +272,9 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Tennessee
 
-*Added:*
+*Added:* 2024-12-05
 
-*Source:*
+*Source:* https://sos.tn.gov/elections/results
 
 ### Texas
 
