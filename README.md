@@ -1,6 +1,6 @@
 # 2024-elections-official
 
-![](precinct_progress_map_.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2024 General Election in the United States. We have begun compiling precinct-level election results. If you notice any issues in our results, please open an Issue in this repository. 
@@ -97,9 +97,9 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Illinois
 
-*Added:*
+*Added:* 2025-02-13
 
-*Source:*
+*Source:* https://www.elections.il.gov/electionoperations/ElectionVoteTotalsPrecinct.aspx?ID=rfZ%2buidMSDY%3d
 
 ### Indiana
 
@@ -157,9 +157,9 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Minnesota
 
-*Added:*
+*Added:* 2025-02-13
 
-*Source:*
+*Source:* https://electionresults.sos.mn.gov/Select/MediaFiles/Index?ersElectionId=170
 
 ### Mississippi
 
