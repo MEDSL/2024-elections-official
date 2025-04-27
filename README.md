@@ -1,6 +1,6 @@
 # 2024-elections-official
 
-![](precinct_progress_map.png "Title")
+![](_precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2024 General Election in the United States. We have begun compiling precinct-level election results. If you notice any issues in our results, please open an Issue in this repository. 
@@ -73,9 +73,9 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Florida
 
-*Added:*
+*Added:* 2025-04-27
 
-*Source:*
+*Source:* https://dos.fl.gov/elections/data-statistics/elections-data/precinct-level-election-results/
 
 ### Georgia
 
