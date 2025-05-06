@@ -1,6 +1,6 @@
 # 2024-elections-official
 
-![](_precinct_progress_map.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2024 General Election in the United States. We have begun compiling precinct-level election results. If you notice any issues in our results, please open an Issue in this repository. 
@@ -260,9 +260,9 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### South Carolina
 
-*Added:*
+*Added:* 2025-05-05
 
-*Source:*
+*Source:* https://www.enr-scvotes.org/SC/122436/web.345435/#/access-to-races
 
 ### South Dakota
 
