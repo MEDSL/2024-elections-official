@@ -193,9 +193,9 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### New Hampshire
 
-*Added:*
+*Added:* 2025-07-13
 
-*Source:*
+*Source:* https://www.sos.nh.gov/2024-general-election-results
 
 ### New Jersey
 
