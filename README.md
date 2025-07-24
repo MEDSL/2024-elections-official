@@ -1,6 +1,6 @@
 # 2024-elections-official
 
-![](_precinct_progress_map.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2024 General Election in the United States. We have begun compiling precinct-level election results. If you notice any issues in our results, please open an Issue in this repository. 
@@ -85,9 +85,9 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Hawaii
 
-*Added:*
+*Added:* 2025-07-23
 
-*Source:*
+*Source:* Precinct data from here: https://elections.hawaii.gov/election-results/ , precinct to county crosswalk here: https://elections.hawaii.gov/resources/districts-and-precincts/
 
 ### Idaho
 
@@ -115,9 +115,11 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Kansas
 
-*Added:*
+*Added:* 2025-07-23
 
-*Source:*
+*Source:* https://sos.ks.gov/elections/election-results.html
+
+*Notes:* A `*` is used to represent a vote total in precincts where the source dataset masked the vote total of sufficiently small geographies to preserve voter privacy.
 
 ### Kentucky
 
@@ -205,9 +207,11 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### New Mexico
 
-*Added:*
+*Added:* 2025-07-23
 
-*Source:*
+*Source:* https://electionresults.sos.nm.gov/
+
+*Notes:* A `*` is used to represent a vote total in precincts where the source dataset masked the vote total of sufficiently small geographies to preserve voter privacy.
 
 ### New York
 
