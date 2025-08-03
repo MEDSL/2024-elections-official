@@ -1,6 +1,6 @@
 # 2024-elections-official
 
-![](_precinct_progress_map.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2024 General Election in the United States. We have begun compiling precinct-level election results. If you notice any issues in our results, please open an Issue in this repository. 
@@ -103,9 +103,17 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Indiana
 
-*Added:*
+*Added:* 2025-08-03
 
-*Source:*
+*Source:* Most data are from the state government, here: https://enr.indianavoters.in.gov/site/index.html . However, Indiana has not published complete precinct-level election results since 2018; in 2018, official county-level results were not available, and in 2020 and 2022, Indiana was the only state in which multiple counties did not supply any precinct-level election result data. This occurred again in 2024, so we supplement the official state releases with information from OpenElections in the following counties: Allen, Boone, Clay, Fountain, Gibson, Hancock, Laporte, Noble, Porter, Putnam, Ripley, and Washington.
+
+*Notes:* Please be aware of major caveats when using these data.
+
+* The following counties are missing entirely, due to a lack of any availabel precinct-level election result data from an official government source: BENTON, BLACKFORD, BROWN, CARROLL, CASS, CLARK, DAVIESS, DEKALB, DUBOIS, FLOYD, HENDRICKS, JACKSON, JASPER, JAY, LAWRENCE, MADISON, MARSHALL, MIAMI, MONROE, NEWTON, OWEN, PERRY, PULASKI, RANDOLPH, SCOTT, SHELBY, STARKE, STEUBEN, SWITZERLAND, TIPPECANOE, TIPTON, UNION, WABASH, WARREN, WARRICK, and WAYNE.
+
+* We are unable to conduct our usual aggregation check, comparing the sum of precinct-level results to county- or district-wide vote totals for state- and federal-level offices, because so many counties are missing election result data entirely. So, we cannot be confident in the accuracy of the reported precinct-level vote totals.
+
+* We ensure completeness and accuracy of the `magnitude` field for any state- or federal-level office, but below that we have left this field blank nearly always for this state. Local offices in Indiana (e.g. school board) often have magnitudes much larger than 1, but in many cases the magnitude is not published as part of the election result reporting, and ballots sample ballots, or local law must be consulted.
 
 ### Iowa
 
