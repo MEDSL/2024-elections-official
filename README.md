@@ -115,6 +115,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 * We ensure completeness and accuracy of the `magnitude` field for any state- or federal-level office, but below that we have left this field blank nearly always for this state. Local offices in Indiana (e.g. school board) often have magnitudes much larger than 1, but in many cases the magnitude is not published as part of the election result reporting, and ballots sample ballots, or local law must be consulted.
 
+* There are some duplicated and nearly duplicated rows. These appear in the original data source. We *suspect* (though we cannot be certain) that they represent different collections of votes, but that some disambiguating information was not included in the original data reporting.
+
 ### Iowa
 
 *Added:*
