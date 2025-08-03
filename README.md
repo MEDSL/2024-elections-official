@@ -105,11 +105,11 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 *Added:* 2025-08-03
 
-*Source:* Most data are from the state government, here: https://enr.indianavoters.in.gov/site/index.html . However, Indiana has not published complete precinct-level election results since 2018; in 2018, official county-level results were not available, and in 2020 and 2022, Indiana was the only state in which multiple counties did not supply any precinct-level election result data. This occurred again in 2024, so we supplement the official state releases with information from OpenElections in the following counties: Allen, Boone, Clay, Fountain, Gibson, Hancock, Laporte, Noble, Porter, Putnam, Ripley, and Washington.
+*Source:* Most data are from the state government, here: https://enr.indianavoters.in.gov/site/index.html . However, Indiana has not published complete precinct-level election results since 2018; in 2018, official county-level results were not available, and in 2020 and 2022, Indiana was the only state in which multiple counties did not supply any precinct-level election result data. This occurred again in 2024, so we supplement the official state releases with information from OpenElections in the following counties: Allen, Boone, Clay, Fountain, Gibson, Hancock, Laporte, Noble, Porter, Putnam, Ripley, and Washington. The OpenElections data are available here: https://github.com/openelections/openelections-data-in/tree/master/2024/counties .
 
-*Notes:* Please be aware of major caveats when using these data.
+*WARNING:* Please be aware of major caveats when using these data.
 
-* The following counties are missing entirely, due to a lack of any availabel precinct-level election result data from an official government source: BENTON, BLACKFORD, BROWN, CARROLL, CASS, CLARK, DAVIESS, DEKALB, DUBOIS, FLOYD, HENDRICKS, JACKSON, JASPER, JAY, LAWRENCE, MADISON, MARSHALL, MIAMI, MONROE, NEWTON, OWEN, PERRY, PULASKI, RANDOLPH, SCOTT, SHELBY, STARKE, STEUBEN, SWITZERLAND, TIPPECANOE, TIPTON, UNION, WABASH, WARREN, WARRICK, and WAYNE.
+* The following counties are missing entirely, due to a lack of any availabel precinct-level election result data from an official government source: BENTON, BLACKFORD, BROWN, CARROLL, CASS, CLARK, DAVIESS, DEKALB, DUBOIS, FLOYD, HENDRICKS, JACKSON, JASPER, JAY, LAWRENCE, MADISON, MARSHALL, MIAMI, MONROE, NEWTON, OWEN, PERRY, PULASKI, RANDOLPH, SCOTT, SHELBY, STARKE, STEUBEN, SWITZERLAND, TIPPECANOE, TIPTON, UNION, WABASH, WARREN, WARRICK, and WAYNE
 
 * We are unable to conduct our usual aggregation check, comparing the sum of precinct-level results to county- or district-wide vote totals for state- and federal-level offices, because so many counties are missing election result data entirely. So, we cannot be confident in the accuracy of the reported precinct-level vote totals.
 
