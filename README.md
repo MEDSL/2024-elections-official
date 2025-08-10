@@ -109,7 +109,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 *WARNING:* Please be aware of major caveats when using these data.
 
-* The following counties are missing entirely, due to a lack of any availabel precinct-level election result data from an official government source: BENTON, BLACKFORD, BROWN, CARROLL, CASS, CLARK, DAVIESS, DEKALB, DUBOIS, FLOYD, HENDRICKS, JACKSON, JASPER, JAY, LAWRENCE, MADISON, MARSHALL, MIAMI, MONROE, NEWTON, OWEN, PERRY, PULASKI, RANDOLPH, SCOTT, SHELBY, STARKE, STEUBEN, SWITZERLAND, TIPPECANOE, TIPTON, UNION, WABASH, WARREN, WARRICK, and WAYNE
+* The following counties are missing entirely, due to a lack of any available precinct-level election result data from an official government source: BENTON, BLACKFORD, BROWN, CARROLL, CASS, CLARK, DAVIESS, DEKALB, DUBOIS, FLOYD, HENDRICKS, JACKSON, JASPER, JAY, LAWRENCE, MADISON, MARSHALL, MIAMI, MONROE, NEWTON, OWEN, PERRY, PULASKI, RANDOLPH, SCOTT, SHELBY, STARKE, STEUBEN, SWITZERLAND, TIPPECANOE, TIPTON, UNION, WABASH, WARREN, WARRICK, and WAYNE
 
 * We are in general unable to conduct our usual aggregation check, comparing the sum of precinct-level results to county- or district-wide vote totals for state- and federal-level offices, because so many counties are missing election result data entirely. So, we cannot be confident in the accuracy of all reported precinct-level vote totals. Wherever we were able to conduct the aggregation check, however, we did so (for example in U.S. House districts that are entirely contained in counties that did report precinct-level election result data), and in every location where an aggregation check was possible, the candidates' vote totals did add up exactly to their official district-wide vote totals.
 
