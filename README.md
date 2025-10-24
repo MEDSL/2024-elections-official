@@ -19,31 +19,31 @@ For any questions about how we clean and Quality Assure these data, and how accu
 ## State-specific information
 ### Alabama
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Alaska
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Arizona
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Arkansas
 *Added:*  
-*[Source]()*
+*Source*
 
 ### California
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Colorado
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Connecticut
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Delaware
 *Added:* 2024-11-13  
@@ -59,7 +59,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Georgia
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Hawaii
 *Added:* 2025-07-23  
@@ -68,7 +68,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Idaho
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Illinois
 *Added:* 2025-02-13  
@@ -83,7 +83,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Iowa
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Kansas
 *Added:* 2025-07-23  
@@ -93,19 +93,19 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Kentucky
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Louisiana
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Maine
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Maryland
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Massachusetts
 *Added:* 2025-10-24  
@@ -121,7 +121,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Mississippi
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Missouri
 *Added:* 2025-10-24  
@@ -137,7 +137,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Nevada
 *Added:*  
-*[Source]()*
+*Source*
 
 ### New Hampshire
 *Added:* 2025-07-13  
@@ -145,7 +145,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### New Jersey
 *Added:*  
-*[Source]()*
+*Source*
 
 ### New Mexico
 *Added:* 2025-07-23  
@@ -155,7 +155,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### New York
 *Added:*  
-*[Source]()*
+*Source*
 
 ### North Carolina
 *Added:* 2024-12-16  
@@ -163,11 +163,11 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### North Dakota
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Ohio
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Oklahoma
 *Added:* 2024-11-14  
@@ -175,7 +175,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Oregon
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Pennsylvania
 *Added:* 2025-10-24  
@@ -183,7 +183,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Rhode Island
 *Added:*  
-*[Source]()*
+*Source*
 
 ### South Carolina
 *Added:* 2025-05-05  
@@ -200,15 +200,15 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Texas
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Utah
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Vermont
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Virginia
 *Added:* 2025-07-26  
@@ -216,20 +216,16 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Washington
 *Added:*  
-*[Source]()*
+*Source*
 
 ### West Virginia
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Wisconsin
 *Added:*  
-*[Source]()*
+*Source*
 
 ### Wyoming
 *Added:*  
-*[Source]()*
-
----
-
-All sections without current entries are placeholders and will be updated as additional states are processed.
+*Source*
