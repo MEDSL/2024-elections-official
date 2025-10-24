@@ -18,324 +18,218 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ## State-specific information
 ### Alabama
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Alaska
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Arizona
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Arkansas
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### California
-
-*Added:*
-
-*Source:*
-
-### Connecticut
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Colorado
+*Added:*  
+*[Source]()*
 
-*Added:*
-
-*Source:*
+### Connecticut
+*Added:*  
+*[Source]()*
 
 ### Delaware
-
-*Added:* 2024-11-13
-
-*Source:* https://elections.delaware.gov/results/html/index.shtml?electionId=GE2024
+*Added:* 2024-11-13  
+*[Source](https://elections.delaware.gov/results/html/index.shtml?electionId=GE2024)*
 
 ### District of Columbia
-
-*Added:* 2025-01-23
-
-*Source:* https://electionresults.dcboe.org/election_results/2024-General-Election
+*Added:* 2025-01-23  
+*[Source](https://electionresults.dcboe.org/election_results/2024-General-Election)*
 
 ### Florida
-
-*Added:* 2025-04-27
-
-*Source:* https://dos.fl.gov/elections/data-statistics/elections-data/precinct-level-election-results/
+*Added:* 2025-04-27  
+*[Source](https://dos.fl.gov/elections/data-statistics/elections-data/precinct-level-election-results/)*
 
 ### Georgia
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Hawaii
-
-*Added:* 2025-07-23
-
-*Source:* Precinct data from here: https://elections.hawaii.gov/election-results/ , precinct to county crosswalk here: https://elections.hawaii.gov/resources/districts-and-precincts/
+*Added:* 2025-07-23  
+*[Source](https://elections.hawaii.gov/election-results/)* – Precinct data.  
+*[Source](https://elections.hawaii.gov/resources/districts-and-precincts/)* – Precinct-to-county crosswalk.
 
 ### Idaho
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Illinois
-
-*Added:* 2025-02-13
-
-*Source:* https://www.elections.il.gov/electionoperations/ElectionVoteTotalsPrecinct.aspx?ID=rfZ%2buidMSDY%3d
+*Added:* 2025-02-13  
+*[Source](https://www.elections.il.gov/electionoperations/ElectionVoteTotalsPrecinct.aspx?ID=rfZ%2buidMSDY%3d)*
 
 ### Indiana
+*Added:* 2025-08-03  
+*[Source](https://enr.indianavoters.in.gov/site/index.html)* – Official state data.  
+*[Source](https://github.com/openelections/openelections-data-in/tree/master/2024/counties)* – Supplemental OpenElections data.  
 
-*Added:* 2025-08-03
-
-*Source:* Most data are from the state government, here: https://enr.indianavoters.in.gov/site/index.html . However, Indiana has not published complete precinct-level election results since 2018; in 2018, official county-level results were not available, and in 2020 and 2022, Indiana was the only state in which multiple counties did not supply any precinct-level election result data. This occurred again in 2024, so we supplement the official state releases with information from OpenElections in the following counties: Allen, Boone, Clay, Fountain, Gibson, Hancock, Laporte, Noble, Porter, Putnam, Ripley, and Washington. The OpenElections data are available here: https://github.com/openelections/openelections-data-in/tree/master/2024/counties .
-
-*WARNING:* Please be aware of major caveats when using these data.
-
-* The following counties are missing entirely, due to a lack of any available precinct-level election result data from an official government source: BENTON, BLACKFORD, BROWN, CARROLL, CASS, CLARK, DAVIESS, DEKALB, DUBOIS, FLOYD, HENDRICKS, JACKSON, JASPER, JAY, LAWRENCE, MADISON, MARSHALL, MIAMI, MONROE, NEWTON, OWEN, PERRY, PULASKI, RANDOLPH, SCOTT, SHELBY, STARKE, STEUBEN, SWITZERLAND, TIPPECANOE, TIPTON, UNION, WABASH, WARREN, WARRICK, and WAYNE
-
-* We are in general unable to conduct our usual aggregation check, comparing the sum of precinct-level results to county- or district-wide vote totals for state- and federal-level offices, because so many counties are missing election result data entirely. So, we cannot be confident in the accuracy of all reported precinct-level vote totals. Wherever we were able to conduct the aggregation check, however, we did so (for example in U.S. House districts that are entirely contained in counties that did report precinct-level election result data), and in every location where an aggregation check was possible, the candidates' vote totals did add up exactly to their official district-wide vote totals.
-
-* We ensure completeness and accuracy of the `magnitude` field for any state- or federal-level office, but below that we have left this field blank nearly always for this state. Local offices in Indiana (e.g. school board) often have magnitudes much larger than 1, but in many cases the magnitude is not published as part of the election result reporting, and ballots sample ballots, or local law must be consulted.
-
-* There are some duplicated and nearly duplicated rows. These appear in the original data source. We *suspect* (though we cannot be certain) that they represent different collections of votes, but that some disambiguating information was not included in the original data reporting.
+**Warning:** Major caveats apply to Indiana’s data completeness and accuracy. See repository notes for missing counties and aggregation limitations.
 
 ### Iowa
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Kansas
+*Added:* 2025-07-23  
+*[Source](https://sos.ks.gov/elections/election-results.html)*  
 
-*Added:* 2025-07-23
-
-*Source:* https://sos.ks.gov/elections/election-results.html
-
-*Notes:* A `*` is used to represent a vote total in precincts where the source dataset masked the vote total of sufficiently small geographies to preserve voter privacy.
+**Notes:** A `*` indicates masked vote totals to preserve voter privacy.
 
 ### Kentucky
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Louisiana
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Maine
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Maryland
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Massachusetts
-
-*Added:*
-
-*Source:*
+*Added:* 2025-10-24  
+*[Source](https://electionstats.state.ma.us/elections/search/year_from:2024/year_to:2024/stage:General)*
 
 ### Michigan
-
-*Added:*
-
-*Source:*
+*Added:* 2025-10-24  
+*[Source](https://mielections.us/election/results/)*
 
 ### Minnesota
-
-*Added:* 2025-02-13
-
-*Source:* https://electionresults.sos.mn.gov/Select/MediaFiles/Index?ersElectionId=170
+*Added:* 2025-02-13  
+*[Source](https://electionresults.sos.mn.gov/Select/MediaFiles/Index?ersElectionId=170)*
 
 ### Mississippi
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Missouri
-
-*Added:*
-
-*Source:*
+*Added:* 2025-10-24  
+*[Source](https://enr.sos.mo.gov/)*
 
 ### Montana
-
-*Added:* 2024-12-16
-
-*Source:* https://electionresults.mt.gov/ResultsSW.aspx
+*Added:* 2024-12-16  
+*[Source](https://electionresults.mt.gov/ResultsSW.aspx)*
 
 ### Nebraska
-
-*Added:*
-
-*Source:*
+*Added:* 2025-10-24  
+*[Source](https://electionresults.nebraska.gov/default.aspx)*
 
 ### Nevada
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### New Hampshire
-
-*Added:* 2025-07-13
-
-*Source:* https://www.sos.nh.gov/2024-general-election-results
+*Added:* 2025-07-13  
+*[Source](https://www.sos.nh.gov/2024-general-election-results)*
 
 ### New Jersey
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### New Mexico
+*Added:* 2025-07-23  
+*[Source](https://electionresults.sos.nm.gov/)*  
 
-*Added:* 2025-07-23
-
-*Source:* https://electionresults.sos.nm.gov/
-
-*Notes:* A `*` is used to represent a vote total in precincts where the source dataset masked the vote total of sufficiently small geographies to preserve voter privacy.
+**Notes:** A `*` indicates masked vote totals for privacy.
 
 ### New York
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### North Carolina
-
-*Added:* 2024-12-16
-
-*Source:* https://www.ncsbe.gov/results-data/election-results/historical-election-results-data
-
+*Added:* 2024-12-16  
+*[Source](https://www.ncsbe.gov/results-data/election-results/historical-election-results-data)*
 
 ### North Dakota
-
-*Added:*
-
-*Source:*
-
-### Oklahoma
-
-*Added:* 2024-11-14
-
-*Source:* https://results.okelections.gov/OKER/?elecDate=20241105
+*Added:*  
+*[Source]()*
 
 ### Ohio
+*Added:*  
+*[Source]()*
 
-*Added:*
-
-*Source:*
+### Oklahoma
+*Added:* 2024-11-14  
+*[Source](https://results.okelections.gov/OKER/?elecDate=20241105)*
 
 ### Oregon
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Pennsylvania
-
-*Added:*
-
-*Source:*
+*Added:* 2025-10-24  
+*[Source](https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics/bulk-election-data.html#accordion-b33bb36a11-item-d105bc02cf)*
 
 ### Rhode Island
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### South Carolina
-
-*Added:* 2025-05-05
-
-*Source:* https://www.enr-scvotes.org/SC/122436/web.345435/#/access-to-races
+*Added:* 2025-05-05  
+*[Source](https://www.enr-scvotes.org/SC/122436/web.345435/#/access-to-races)*
 
 ### South Dakota
-
-*Added:* 2024-11-21
-
-*Source:* Results from https://electionresults.sd.gov/Default.aspx, candidate party labels from https://vip.sdsos.gov/candidatelist.aspx?eid=684
+*Added:* 2024-11-21  
+*[Source](https://electionresults.sd.gov/Default.aspx)* – Official results.  
+*[Source](https://vip.sdsos.gov/candidatelist.aspx?eid=684)* – Candidate party labels.
 
 ### Tennessee
-
-*Added:* 2024-12-05
-
-*Source:* https://sos.tn.gov/elections/results
+*Added:* 2024-12-05  
+*[Source](https://sos.tn.gov/elections/results)*
 
 ### Texas
-
-*Added:*
-
-*Source:*
-
+*Added:*  
+*[Source]()*
 
 ### Utah
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Vermont
-
-*Added:*
-
-*Source:*
-
+*Added:*  
+*[Source]()*
 
 ### Virginia
-
-*Added:* 2025-07-26
-
-*Source:* https://enr.elections.virginia.gov/results/public/Virginia/elections/2024NovemberGeneral
+*Added:* 2025-07-26  
+*[Source](https://enr.elections.virginia.gov/results/public/Virginia/elections/2024NovemberGeneral)*
 
 ### Washington
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### West Virginia
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Wisconsin
-
-*Added:*
-
-*Source:*
+*Added:*  
+*[Source]()*
 
 ### Wyoming
+*Added:*  
+*[Source]()*
 
-*Added:*
+---
 
-*Source:*
+All sections without current entries are placeholders and will be updated as additional states are processed.
