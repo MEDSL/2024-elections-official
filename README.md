@@ -1,6 +1,6 @@
 # 2024-elections-official
 
-![](precinct_progress_map.png "Title")
+![](progress_map.png)
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2024 General Election in the United States. We have begun compiling precinct-level election results. If you notice any issues in our results, please open an Issue in this repository. 
@@ -19,71 +19,71 @@ For any questions about how we clean and Quality Assure these data, and how accu
 ## State-specific information
 ### Alabama
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Alaska
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Arizona
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Arkansas
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### California
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Colorado
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Connecticut
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Delaware
 *Added:* 2024-11-13  
-*[Source](https://elections.delaware.gov/results/html/index.shtml?electionId=GE2024)*
+*[Source](https://elections.delaware.gov/results/html/index.shtml?electionId=GE2024)*  
 
 ### District of Columbia
 *Added:* 2025-01-23  
-*[Source](https://electionresults.dcboe.org/election_results/2024-General-Election)*
+*[Source](https://electionresults.dcboe.org/election_results/2024-General-Election)*  
 
 ### Florida
 *Added:* 2025-04-27  
-*[Source](https://dos.fl.gov/elections/data-statistics/elections-data/precinct-level-election-results/)*
+*[Source](https://dos.fl.gov/elections/data-statistics/elections-data/precinct-level-election-results/)*  
 
 ### Georgia
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Hawaii
 *Added:* 2025-07-23  
-*[Source](https://elections.hawaii.gov/election-results/)* – Precinct data.  
-*[Source](https://elections.hawaii.gov/resources/districts-and-precincts/)* – Precinct-to-county crosswalk.
+*[Source (precinct data)](https://elections.hawaii.gov/election-results/)*  
+*[Source (precinct-to-county crosswalk)](https://elections.hawaii.gov/resources/districts-and-precincts/)*  
 
 ### Idaho
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Illinois
 *Added:* 2025-02-13  
-*[Source](https://www.elections.il.gov/electionoperations/ElectionVoteTotalsPrecinct.aspx?ID=rfZ%2buidMSDY%3d)*
+*[Source](https://www.elections.il.gov/electionoperations/ElectionVoteTotalsPrecinct.aspx?ID=rfZ%2buidMSDY%3d)*  
 
 ### Indiana
 *Added:* 2025-08-03  
-*[Source](https://enr.indianavoters.in.gov/site/index.html)* – Official state data.  
-*[Source](https://github.com/openelections/openelections-data-in/tree/master/2024/counties)* – Supplemental OpenElections data.  
+*[Source (official state data)](https://enr.indianavoters.in.gov/site/index.html)*  
+*[Source (supplemental OpenElections data)](https://github.com/openelections/openelections-data-in/tree/master/2024/counties)*  
 
 **Warning:** Major caveats apply to Indiana’s data completeness and accuracy. See repository notes for missing counties and aggregation limitations.
 
 ### Iowa
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Kansas
 *Added:* 2025-07-23  
@@ -93,59 +93,59 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### Kentucky
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Louisiana
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Maine
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Maryland
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Massachusetts
 *Added:* 2025-10-24  
-*[Source](https://electionstats.state.ma.us/elections/search/year_from:2024/year_to:2024/stage:General)*
+*[Source](https://electionstats.state.ma.us/elections/search/year_from:2024/year_to:2024/stage:General)*  
 
 ### Michigan
 *Added:* 2025-10-24  
-*[Source](https://mielections.us/election/results/)*
+*[Source](https://mielections.us/election/results/)*  
 
 ### Minnesota
 *Added:* 2025-02-13  
-*[Source](https://electionresults.sos.mn.gov/Select/MediaFiles/Index?ersElectionId=170)*
+*[Source](https://electionresults.sos.mn.gov/Select/MediaFiles/Index?ersElectionId=170)*  
 
 ### Mississippi
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Missouri
 *Added:* 2025-10-24  
-*[Source](https://enr.sos.mo.gov/)*
+*[Source](https://enr.sos.mo.gov/)*  
 
 ### Montana
 *Added:* 2024-12-16  
-*[Source](https://electionresults.mt.gov/ResultsSW.aspx)*
+*[Source](https://electionresults.mt.gov/ResultsSW.aspx)*  
 
 ### Nebraska
 *Added:* 2025-10-24  
-*[Source](https://electionresults.nebraska.gov/default.aspx)*
+*[Source](https://electionresults.nebraska.gov/default.aspx)*  
 
 ### Nevada
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### New Hampshire
 *Added:* 2025-07-13  
-*[Source](https://www.sos.nh.gov/2024-general-election-results)*
+*[Source](https://www.sos.nh.gov/2024-general-election-results)*  
 
 ### New Jersey
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### New Mexico
 *Added:* 2025-07-23  
@@ -155,77 +155,81 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### New York
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### North Carolina
 *Added:* 2024-12-16  
-*[Source](https://www.ncsbe.gov/results-data/election-results/historical-election-results-data)*
+*[Source](https://www.ncsbe.gov/results-data/election-results/historical-election-results-data)*  
 
 ### North Dakota
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Ohio
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Oklahoma
 *Added:* 2024-11-14  
-*[Source](https://results.okelections.gov/OKER/?elecDate=20241105)*
+*[Source](https://results.okelections.gov/OKER/?elecDate=20241105)*  
 
 ### Oregon
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Pennsylvania
 *Added:* 2025-10-24  
-*[Source](https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics/bulk-election-data.html#accordion-b33bb36a11-item-d105bc02cf)*
+*[Source](https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics/bulk-election-data.html#accordion-b33bb36a11-item-d105bc02cf)*  
 
 ### Rhode Island
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### South Carolina
 *Added:* 2025-05-05  
-*[Source](https://www.enr-scvotes.org/SC/122436/web.345435/#/access-to-races)*
+*[Source](https://www.enr-scvotes.org/SC/122436/web.345435/#/access-to-races)*  
 
 ### South Dakota
 *Added:* 2024-11-21  
-*[Source](https://electionresults.sd.gov/Default.aspx)* – Official results.  
-*[Source](https://vip.sdsos.gov/candidatelist.aspx?eid=684)* – Candidate party labels.
+*[Source (official results)](https://electionresults.sd.gov/Default.aspx)*  
+*[Source (candidate party labels)](https://vip.sdsos.gov/candidatelist.aspx?eid=684)*  
 
 ### Tennessee
 *Added:* 2024-12-05  
-*[Source](https://sos.tn.gov/elections/results)*
+*[Source](https://sos.tn.gov/elections/results)*  
 
 ### Texas
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Utah
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Vermont
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Virginia
 *Added:* 2025-07-26  
-*[Source](https://enr.elections.virginia.gov/results/public/Virginia/elections/2024NovemberGeneral)*
+*[Source](https://enr.elections.virginia.gov/results/public/Virginia/elections/2024NovemberGeneral)*  
 
 ### Washington
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### West Virginia
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Wisconsin
 *Added:*  
-*Source*
+*[Source]()*  
 
 ### Wyoming
 *Added:*  
-*Source*
+*[Source]()*  
+
+---
+
+All sections without current entries are placeholders and will be updated as additional states are processed.
