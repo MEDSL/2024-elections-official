@@ -38,8 +38,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source]()*  
 
 ### Colorado
-*Added:*  
-*[Source]()*  
+*Added:* 2025-10-24
+*[Source](https://www.sos.state.co.us/pubs/elections/resultsData.html)*  
 
 ### Connecticut
 *Added:*  
@@ -100,8 +100,10 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source]()*  
 
 ### Maine
-*Added:*  
-*[Source]()*  
+*Added:* 2025-10-27
+*[Source](https://www.maine.gov/sos/cec/elec/results/results24.html)*  
+
+**Notes:** For some observations `jurisdiction_fips` was unable to be determined.
 
 ### Maryland
 *Added:*  
@@ -207,8 +209,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source]()*  
 
 ### Vermont
-*Added:*  
-*[Source]()*  
+*Added:* 2025-10-24 
+*[Source](https://electionarchive.vermont.gov/elections/search/date:2024-11-05)*  
 
 ### Virginia
 *Added:* 2025-07-26  
@@ -219,8 +221,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source]()*  
 
 ### West Virginia
-*Added:*  
-*[Source]()*  
+*Added:* 2025-10-24
+*[Source](https://results.enr.clarityelections.com/WV/122766/web.345435/#/summary)*  
 
 ### Wisconsin
 *Added:*  
