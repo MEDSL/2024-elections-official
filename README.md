@@ -58,8 +58,9 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source](https://dos.fl.gov/elections/data-statistics/elections-data/precinct-level-election-results/)*  
 
 ### Georgia
-*Added:*  
-*[Source]()*  
+*Added:* 2025-10-30 
+*[Source (precinct data)](https://results.sos.ga.gov/results/public/Georgia/elections/2024NovGen)* 
+*[Source (office crosswalk)](https://results.sos.ga.gov/results/public/Georgia/elections/2024NovGen/reports)* 
 
 ### Hawaii
 *Added:* 2025-07-23  
