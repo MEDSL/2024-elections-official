@@ -18,8 +18,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ## State-specific information
 ### Alabama
-*Added:*  
-*[Source]()*  
+*Added:* 2025-10-31  
+*[Source](https://www.sos.alabama.gov/alabama-votes/voter/election-data)*  
 
 *Note:* Alabama gives voters an option to check one box to cast a straight ticket ballot (e.g. vote for all Republican candidates). We denote this is `office = "STRAIGHT PARTY"`.
 
@@ -171,8 +171,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source]()*  
 
 ### Ohio
-*Added:*  
-*[Source]()*  
+*Added:* 2025-10-31  
+*[Source](https://www.ohiosos.gov/elections/election-results-and-data/2024-official-election-results/)*  
 
 ### Oklahoma
 *Added:* 2024-11-14  
