@@ -21,6 +21,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *Added:*  
 *[Source]()*  
 
+*Note:* Alabama gives voters an option to check one box to cast a straight ticket ballot (e.g. vote for all Republican candidates). We denote this is `office = "STRAIGHT PARTY"`.
+
 ### Alaska
 *Added:*  
 *[Source]()*  
