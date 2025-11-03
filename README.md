@@ -85,8 +85,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 **Warning:** Major caveats apply to Indiana’s data completeness and accuracy. See repository notes for missing counties and aggregation limitations.
 
 ### Iowa
-*Added:*  
-*[Source]()*  
+*Added:* 2025-11-03 
+*[Source](https://sos.iowa.gov/elections/results/precinctvotetotals2024general.html)*  
 
 ### Kansas
 *Added:* 2025-07-23  
