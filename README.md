@@ -44,8 +44,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source](https://www.sos.state.co.us/pubs/elections/resultsData.html)*  
 
 ### Connecticut
-*Added:*  
-*[Source]()*  
+*Added:* 2025-11-05  
+*[Source](https://ctemspublic.tgstg.net/#/home)*  
 
 ### Delaware
 *Added:* 2024-11-13  
