@@ -39,7 +39,7 @@ The district identifier for the race, given that it is substate. If the district
 ### dataverse:
 The dataverse that the data will be a part of, based on its office. The allowed values are "PRESIDENT" for US Presidential races, "SENATE" for US Senate races, "HOUSE" for US House races, and "STATE" for state level executive, legislative, and judicial races. All other races have a blank dataverse value.
 
-Note that judicial races can be determined if they are part of the state dataverse from the State Court Strucutre chart, http://www.courtstatistics.org/state_court_structure_charts?SQ_VARIATION_28850=0
+Note that judicial races can be determined if they are part of the state dataverse from the [State Court Structure chart](http://www.courtstatistics.org/state_court_structure_charts?SQ_VARIATION_28850=0)
 where if it is labeled as Limited Jurisdiction Court, then it is local, and state otherwise. 
 
 ### year:
