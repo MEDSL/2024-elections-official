@@ -32,8 +32,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source]()*  
 
 ### Arkansas
-*Added:*  
-*[Source]()*  
+*Added:* 2025-11-07  
+*[Source](https://results.enr.clarityelections.com/AR/122502/web.345435/#/reporting)*  
 
 ### California
 *Added:*  
@@ -208,8 +208,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source]()*  
 
 ### Utah
-*Added:*  
-*[Source]()*  
+*Added:* 2025-11-07  
+*[Source](https://electionresults.utah.gov/results/public/utah/elections/general11052024)*  
 
 ### Vermont
 *Added:* 2025-10-24  
@@ -220,16 +220,16 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source](https://enr.elections.virginia.gov/results/public/Virginia/elections/2024NovemberGeneral)*  
 
 ### Washington
-*Added:*  
-*[Source]()*  
+*Added:* 2025-11-07 
+*[Source](https://results.vote.wa.gov/results/20241105/export.html)*  
 
 ### West Virginia
 *Added:* 2025-10-24  
 *[Source](https://results.enr.clarityelections.com/WV/122766/web.345435/#/summary)*  
 
 ### Wisconsin
-*Added:*  
-*[Source]()*  
+*Added:* 2025-11-07  
+*[Source](https://elections.wi.gov/elections/election-results#accordion-11951)*  
 
 ### Wyoming
 *Added:*  
