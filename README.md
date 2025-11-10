@@ -141,8 +141,9 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source](https://electionresults.nebraska.gov/default.aspx)*  
 
 ### Nevada
-*Added:*  
-*[Source]()*  
+*Added:* 2025-11-10 
+*[Source (results)](https://www.nvsos.gov/electionresults/)*  
+*[Source (parties)](https://www.nvsos.gov/sos/elections/election-information/2024-election-information)*  
 
 ### New Hampshire
 *Added:* 2025-07-13  
@@ -167,8 +168,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source](https://www.ncsbe.gov/results-data/election-results/historical-election-results-data)*  
 
 ### North Dakota
-*Added:*  
-*[Source]()*  
+*Added:* 2025-11-10  
+*[Source](https://results.sos.nd.gov/ResultsExport.aspx?)*  
 
 ### Ohio
 *Added:* 2025-10-31  
