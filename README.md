@@ -109,8 +109,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 **Notes:** For some observations `jurisdiction_fips` was unable to be determined.
 
 ### Maryland
-*Added:*  
-*[Source]()*  
+*Added:* 2025-11-13  
+*[Source](https://www.elections.maryland.gov/elections/2024/index.html)*  
 
 ### Massachusetts
 *Added:* 2025-10-24  
