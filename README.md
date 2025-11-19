@@ -24,8 +24,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *Note:* Alabama gives voters an option to check one box to cast a straight ticket ballot (e.g. vote for all Republican candidates). We denote this is `office = "STRAIGHT PARTY"`.
 
 ### Alaska
-*Added:*  
-*[Source]()*  
+*Added:* 2025-11-19  
+*[Source](https://www.elections.alaska.gov/election-results/e/?id=24genr)*  
 
 ### Arizona
 *Added:*  
@@ -65,7 +65,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source (office crosswalk)](https://results.sos.ga.gov/results/public/Georgia/elections/2024NovGen/reports)* 
 
 ### Hawaii
-*Added:* 2025-07-23  
+*Added:* 2025-11-19  
 *[Source (precinct data)](https://elections.hawaii.gov/election-results/)*  
 *[Source (precinct-to-county crosswalk)](https://elections.hawaii.gov/resources/districts-and-precincts/)*  
 
