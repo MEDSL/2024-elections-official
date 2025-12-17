@@ -233,8 +233,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source](https://elections.wi.gov/elections/election-results#accordion-11951)*  
 
 ### Wyoming
-*Added:*  
-*[Source]()*  
+*Added: 2025-12-17*  
+*[Source](https://sos.wyo.gov/Elections/Docs/2024/2024GeneralResults.aspx)*  
 
 ---
 
