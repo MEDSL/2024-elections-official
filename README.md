@@ -70,8 +70,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source (precinct-to-county crosswalk)](https://elections.hawaii.gov/resources/districts-and-precincts/)*  
 
 ### Idaho
-*Added:*  
-*[Source]()*  
+*Added: 2025-12-17*  
+*[Source](https://voteidaho.gov/election-results/)*  
 
 ### Illinois
 *Added:* 2025-02-13  
