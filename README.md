@@ -99,8 +99,10 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source]()*  
 
 ### Louisiana
-*Added:*  
-*[Source]()*  
+*Added:*  2026-01-20
+*[Source](https://voterportal.sos.la.gov/static/2024-11-05)*  
+
+**Notes:** Louisiana reports early voting only at the parish level, as such early votes are NOT included in the precinct data.
 
 ### Maine
 *Added:* 2025-10-27  
