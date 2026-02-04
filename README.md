@@ -152,8 +152,20 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source](https://www.sos.nh.gov/2024-general-election-results)*  
 
 ### New Jersey
-*Added:*  
-*[Source]()*  
+*Added:* 2026-02-04
+*Source:* NJ's data is collected from a number of locations, including:
+- https://www.nj.gov/state/elections/election-night-results.shtml
+- https://github.com/openelections/openelections-data-nj/tree/master/2024
+- https://www.co.hunterdon.nj.us/DocumentCenter/View/15968/G2024-Official-Elections-Results-PDF 
+- https://sussexcountyclerk.org/wp-content/uploads/2025/01/OFFICIAL-Precinct-Rpt-suppressed-11-25-Amended-web.pdf
+- https://www.warrencountyvotes.com/home/showpublisheddocument/11384
+- https://www.camdencounty.com/wp-content/elections/general2024/2024_General_Election_Canvasser.pdf
+- https://www.bergencountyclerk.gov/_Content/pdf/ElectionResult/2024%20General%20District%20Report(2).pdf
+- https://www.livevoterturnout.com/ENR/salemnjenr/7/en/Index_7.html
+- https://gloucestercountynj.gov/1252/Previous-Election-Results
+
+
+**Notes:** In 2024 NJ reported its data at the election district level but also included totals at the municipal level. For instance, an observation with `precinct = "Cliffside Park"` provides the total votes across "Cliffside Park 01", "Cliffside Park 02", etc. Care should be taken to not double count votes by including both the municipal totals and election district vote counts.
 
 ### New Mexico
 *Added:* 2025-07-23  
