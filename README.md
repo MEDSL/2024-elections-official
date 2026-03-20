@@ -28,8 +28,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source](https://www.elections.alaska.gov/election-results/e/?id=24genr)*  
 
 ### Arizona
-*Added:*  
-*[Source]()*  
+*Added:* 2026-03-20
+*[Source](https://github.com/openelections/openelections-data-az/tree/master/2024/General)*  
 
 ### Arkansas
 *Added:* 2025-11-07  
