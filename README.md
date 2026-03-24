@@ -174,8 +174,18 @@ For any questions about how we clean and Quality Assure these data, and how accu
 **Notes:** A `*` indicates masked vote totals for privacy.
 
 ### New York
-*Added:*  
-*[Source]()*  
+*Added:* 2026-03-24
+*Source:* Most counties' data were drawn from [OpenElections](https://github.com/openelections/openelections-sources-ny/tree/master/2024/general), NYC data drawn from [here](https://www.vote.nyc/page/election-results-summary). Nassau County data were generously provided by the Nassau County Board of Elections upon request. Orange County results for non-presidential races were generously provided by the Orange County Board of Elections.
+
+**Notes:**
+
+New York is one of the most challenging states to gather and standardize precinct-level returns for due to data availability, formatting, and complexity. Considerable care should be taken when using these data and users should take note of the following:
+
+* Party fusion: New York uses a party fusion system where candidates appear on multiple party lines. Most counties report vote totals for each party line separately, in these cases we preserve this in our data, for instance having a row for `candidate = "KAMALA D HARRIS" where `party_detailed = "WORKING FAMILIES"` and another where `party_detailed = "DEMOCRAT"`, in both cases `party_simplified = "DEMOCRACT"`. Some counties do not disaggregate by fusion party line in which case we report a single vote total for the candidate.
+* Negative undervotes: There are two cases of undervotes being reported as `-2` in the raw Albany County data. We reached out to the Albany County Board of Elections who explained this as a system-balancing mechanism used when recorded votes slightly exceed the total ballots cast (e.g., due to voters sending in an absentee ballot after voting in person or by affidavit). This adjustment does not meaningfully impact vote totals and so is kept as it is reported in the raw data.
+* Jefferson and Dutchess County have minor vote shortfalls/missing precincts due to "protected precincts" where data is suppressed for privacy.
+* Herkimer County is missing results for `office = "State Proposal One"` in the raw data from the county.
+
 
 ### North Carolina
 *Added:* 2024-12-16  
