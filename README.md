@@ -36,8 +36,10 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source](https://results.enr.clarityelections.com/AR/122502/web.345435/#/reporting)*  
 
 ### California
-*Added:*  
-*[Source]()*  
+*Added:*  2026-04-01
+*[Source](https://statewidedatabase.org/election.html)*  
+
+**Notes:** Cases where votes were suppressed for privacy or other reporting reasons are represented by three asterisks: `***`
 
 ### Colorado
 *Added:* 2025-10-24  
