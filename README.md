@@ -36,7 +36,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source](https://results.enr.clarityelections.com/AR/122502/web.345435/#/reporting)*  
 
 ### California
-*Added:*  2026-04-01
+*Added:*  2026-04-01  
 *[Source](https://statewidedatabase.org/election.html)*  
 
 **Notes:** 
