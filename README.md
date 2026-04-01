@@ -39,7 +39,28 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *Added:*  2026-04-01
 *[Source](https://statewidedatabase.org/election.html)*  
 
-**Notes:** Cases where votes were suppressed for privacy or other reporting reasons are represented by three asterisks: `***`
+**Notes:** 
+
+Cases where votes were suppressed for privacy or other reporting reasons are represented by three asterisks: `***`
+
+With regards to `precinct` codes:
+
+`precinct` ending in `"A"`
+- These are thought to denote absentee ballots.
+
+From the Statewide Database's FAQ we have: 
+
+> There are two rows for each precinct in the SVPREC files: one with a number and one with the same number plus "A" (e.g., 202 and 202A). To determine total vote for a candidate, for example, should I add the numbers in the rows corresponding to 202 and 202A?
+
+> Yes. The A denotes the absentee ballots that were cast in that precinct.
+
+`precinct` ending in `"AA"`
+- These are thought to denote all-absentee jurisdictions because the "AA" (All-Absentee) designation is a legal status defined under California Elections Code §3005.
+
+`precinct` ending in `"B"` or `"C"`
+- We believe these denote later supplemental batches of votes that are provisionals or VBM dropped off on Election Day.
+
+Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we were told that these suffixes on precinct names are determined jurisdiction by jurisdiction and are not necessarily standardized across states. Our vote aggregation checks are consistent with the above but users should take great care when using these data.
 
 ### Colorado
 *Added:* 2025-10-24  
