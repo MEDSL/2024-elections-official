@@ -150,8 +150,8 @@ Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we we
 *[Source](https://electionresults.sos.mn.gov/Select/MediaFiles/Index?ersElectionId=170)*  
 
 ### Mississippi
-*Added:*  
-*[Source]()*  
+*Added:* 2026-04-13 
+*[Source](https://sos.ms.gov/elections/electionresults_aspx/elections_results_2024_county.aspx)*  
 
 ### Missouri
 *Added:* 2025-10-24  
