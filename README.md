@@ -1,9 +1,11 @@
 # 2024-elections-official
 
-![](progress_map.png)
+## IMPORTANT
+
+As of April 17, 2026 this repository contains cleaned precinct-level returns for all 50 states + DC. These data have passed our initial round of quality assurance and are now in the final round of QA. **These data may contain errors, please create an issue if data errors are discovered once you are able to confirm it is a genuine error.**
 
 ## Repository info
-This is the MEDSL repository for election returns from the 2024 General Election in the United States. We have begun compiling precinct-level election results. If you notice any issues in our results, please open an Issue in this repository. **Note that while these data have passed our first stage of quality assurance, they have not gone through our final QA and so may contain errors.**
+This is the MEDSL repository for election returns from the 2024 General Election in the United States. We have begun compiling precinct-level election results. If you notice any issues in our results, please open an Issue in this repository.
 
 ## General usage notes
 ### Methods and accuracy
@@ -227,8 +229,8 @@ New York is one of the most challenging states to gather and standardize precinc
 *[Source](https://results.okelections.gov/OKER/?elecDate=20241105)*  
 
 ### Oregon
-*Added:*  
-*[Source]()*  
+*Added:* 2026-04-17  
+*Source:* [Open Elections](https://github.com/openelections/openelections-sources-or/tree/master/2024/general) and county websites
 
 ### Pennsylvania
 *Added:* 2025-10-24  
