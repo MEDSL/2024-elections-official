@@ -30,7 +30,7 @@ We strongly encourage a careful reading of the below and our [codebook](codebook
 *[Source](https://www.elections.alaska.gov/election-results/e/?id=24genr)*  
 
 ### Arizona
-*Added:* 2026-03-20
+*Added:* 2026-03-20 
 *[Source](https://github.com/openelections/openelections-data-az/tree/master/2024/General)*  
 
 **Notes:** `STATE HOUSE` races in Pima County are missing values for `district` due to limitations of the source data.
@@ -95,7 +95,7 @@ Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we we
 *[Source (precinct-to-county crosswalk)](https://elections.hawaii.gov/resources/districts-and-precincts/)*  
 
 ### Idaho
-*Added:* 2025-12-17
+*Added:* 2025-12-17 
 *[Source](https://voteidaho.gov/election-results/)*  
 
 ### Illinois
@@ -118,11 +118,11 @@ Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we we
 *[Source](https://sos.ks.gov/elections/election-results.html)*  
 
 ### Kentucky
-*Added:*  2025-05-06
+*Added:*  2025-05-06 
 *[Source](https://elect.ky.gov/results/2020-2029/Pages/2024.aspx)*  
 
 ### Louisiana
-*Added:*  2026-01-20
+*Added:*  2026-01-20 
 *[Source](https://voterportal.sos.la.gov/static/2024-11-05)*  
 
 **Notes:** Louisiana reports early voting only at the parish level, as such early votes are NOT included in the precinct data.
@@ -154,7 +154,7 @@ State House district 021 is missing candidate Marianna Reeves because she is abs
 **Notes:** There are several cases of negative vote values that appear to be county-level correction artifacts, these were retained as reported.
 
 ### Minnesota
-*Added:* 2025-02-13  
+*Added:* 2025-02-13   
 *[Source](https://electionresults.sos.mn.gov/Select/MediaFiles/Index?ersElectionId=170)*  
 
 ### Mississippi
@@ -162,13 +162,13 @@ State House district 021 is missing candidate Marianna Reeves because she is abs
 *[Source](https://sos.ms.gov/elections/electionresults_aspx/elections_results_2024_county.aspx)*  
 
 ### Missouri
-*Added:* 2025-10-24  
+*Added:* 2025-10-24   
 *[Source](https://enr.sos.mo.gov/)*  
 
 **Notes:** Kansas City rows use synthetic county_fips = 36000 as a cross-county placeholder because Kansas City spans multiple counties.
 
 ### Montana
-*Added:* 2024-12-16  
+*Added:* 2024-12-16   
 *[Source](https://electionresults.mt.gov/ResultsSW.aspx)*  
 
 ### Nebraska
@@ -202,12 +202,12 @@ State House district 021 is missing candidate Marianna Reeves because she is abs
 In 2024 NJ reported its data at the election district level but also included totals at the municipal level. For instance, an observation with `precinct = "Cliffside Park"` provides the total votes across "Cliffside Park 01", "Cliffside Park 02", etc. Care should be taken to not double count votes by including both the municipal totals and election district vote counts. Bergen and Gloucester `TOTAL` rows appear to double-count, while Burlington, Cumberland, Essex, and Mercer are missing `TOTAL rows`, so statewide sums using `TOTAL` or all modes require caution
 
 ### New Mexico
-*Added:* 2025-07-23  
+*Added:* 2025-07-23   
 *[Source](https://electionresults.sos.nm.gov/)*  
 
 
 ### New York
-*Added:* 2026-03-24
+*Added:* 2026-03-24 
 *Source:* Most counties' data were drawn from [OpenElections](https://github.com/openelections/openelections-sources-ny/tree/master/2024/general), NYC data drawn from [here](https://www.vote.nyc/page/election-results-summary). Nassau County data were generously provided by the Nassau County Board of Elections upon request. Orange County results for non-presidential races were generously provided by the Orange County Board of Elections.
 
 **Notes:**
@@ -261,7 +261,7 @@ New York is one of the most challenging states to gather and standardize precinc
 *[Source](https://sos.tn.gov/elections/results)*  
 
 ### Texas
-*Added:* 2025-10-24
+*Added:* 2025-10-24 
 *[Source](https://data.capitol.texas.gov/topic/elections)*  
 
 ### Utah
