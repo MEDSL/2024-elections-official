@@ -1,79 +1,270 @@
 ## Fields:
 
-### precinct: 
-The string id for the smallest election reporting unit of a state. Should generally be left the way it is, except under two conditions. 1) if the precinct is actually some type of total or aggregation of precinct results, then it should be dropped. 2) If we already know what the precinct id looks like from some type of precinct shapefile from a state, then the precinct id should be structured to match the shapefile precinct id. Values that include the string `FLOATING` refer to totals announced at a higher level of aggregation, so for example a county name of `COUNTY FLOATING` represents data reported at the county level.
+### precinct
 
-### office: 
-The field which contains the name of the elected position for the race. These should be standardized and stripped of the district code, candidate names, parties, etc. that belong in the other fields. All entries should be in upper case. Standard entries are US PRESIDENT, US SENATE, US HOUSE, GOVERNOR, STATE SENATE, and STATE HOUSE.
+**Type:** `string`
 
-### party_detailed:
-The upper case party name for the given entry. The most common entries will be DEMOCRAT, REPUBLICAN, and LIBERTARIAN, with the full detailed names for the various parties, including those names that are unique to a given state (i.e. party fusion names). Propositions, amendment, and other referenda should be leave this field as blank "". If there are complications, reach out to one of the QA checkers. 
+**Example(s):** `DISTRICT 1-Andover Elementary School Gym`, `PRECINCT 70`, `104`
 
-### party_simplified:
-The upper case party name for the given entry. The entries will be one of: DEMOCRAT, REPUBLICAN, LIBERTARIAN, OTHER, and NONPARTISAN. Propositions, amendment, and other referenda should be leave this field as blank "". If there are complications, reach out to one of the QA checkers. 
+**Description:** The identifier for the smallest election reporting unit of a state exactly as it appears in the raw data. Note that precinct identifiers and boundaries vary from election to election.
 
-### mode:
-The upper case voting mode for how the election results will be reported. For results that do not offer disaggregation by mode, it will be "TOTAL". For other states that do offer the distinction, then some common entries might include: ABSENTEE, ELECTRONIC, WRITE-IN, PROVISIONAL, ONE-STOP, etc.
+------------------------------------------------------------------------
 
-### votes:
-The numeric value of votes for a given entry. Ensure that commas and the like are not included so as to ensure that it is numeric and not string, and any missing values should be coded as 0. 
+### office
 
-### county_name:
-The upper case name of the county. As with precincts, values that include the string `FLOATING` refer to totals announced at a higher level of aggregation, so for example a county name of `STATE FLOATING` represents data reported at the state level.
+**Type:** `string`
 
-### county_fips: 
-The Census 5-digit code for a given county. Structured such that the first two digits are the state fips, and the last three digits are the county part of the fips. Ensure that each component is string padded such that if a state's or county's fip is one digit, i.e. AL, then padded such that it might take the form of 01020. 
+**Example(s):** `US PRESIDENT`, `STATE HOUSE`, `ERIE COUNTY EXECUTIVE`, `SUPREME COURT - RETENTION - LORETTA RUSH`
 
-### jurisdiction_name:
-The upper case name for the jurisdiction. With the exception of New England states, Wisconsin, and Alaska, these will be the same as the county_name. For the New England states, these will be the town names. 
+**Description:** The uppercase name of the elected position for the race, standardized and stripped of values captured by other variables like district identifiers, candidate names, parties, etc. Standard entries are `US PRESIDENT`, `US SENATE`, `US HOUSE`, `GOVERNOR`, `STATE SENATE`, and `STATE HOUSE`. When a row holds meta-information like the number of registered voters in a jurisdiction, the label is stored in `office`, and `candidate` is left blank.
 
-### jurisdiction_fips: 
-The fips code for the jurisdiction, which will be the same as the county fips for every state except New England states, Wisconsin, and Alaska. Just as with county fips, these should be string padded, though the fips will be 10 digits.  
+Other cases: 
+- For local offices known to be countywide, `county_name` is prepended to `office` when possible. 
+- For state offices besides the legislature and governorship, `office` is standardized across counties when possible. 
+- For ballot measures (propositions, initiatives, referenda, state constitutional amendments), district and locality information is preserved to allow proper identification of the question. This includes the type of measure, its designation, and its title. 
+- For retention elections (usually judicial contests), the court name, the office, and the candidate's name are preserved in `office` while `candidate` contains `YES/NO` or `FOR/AGAINST`, depending on the state's standard. Identifying district information about the court (district, circuit, division, etc.) appears in `district`.
 
-### candidate:
-The candidate name. Should be all upper case and punctuation.
+------------------------------------------------------------------------
 
-### district: 
-The district identifier for the race, given that it is substate. If the district is a state legislative or U.S. House race, then the district should be string padded to be 3 digits long and with zeroes, i.e. State Senate district 3 would be equal to "003". For other substate units (wards, seats, etc) with multiple levels, should reflect the entire unique identifier, i.e. State District Court of the Sixth district and seat C, would be "6, seat C". Ensure consistency for a given state for these non-legislative and congressional races. For candidates with state wide jurisdictions, district should be "statewide". For races without district info, the field should be equal to "". 
+### party_detailed
 
-### dataverse:
-The dataverse that the data will be a part of, based on its office. The allowed values are "PRESIDENT" for US Presidential races, "SENATE" for US Senate races, "HOUSE" for US House races, "STATE" for state level executive, legislative, judicial races, or ballot questions, and "LOCAL" for local contests. For rows that include ancillary information about the contest (such as registered voters, ballots cast, total votes, etc.), leave the value blank.
+**Type:** `string`
 
-Note that judicial races can be determined if they are part of the state dataverse from the [State Court Structure chart](http://www.courtstatistics.org/state_court_structure_charts?SQ_VARIATION_28850=0)
-where if it is labeled as Limited Jurisdiction Court, then it is local, and state otherwise. 
+**Example(s):** `REPUBLICAN`, `DEMOCRAT / WORKING FAMILIES`, `GREEN`
 
-### year:
-The year of the election.
+**Description:** The uppercase detailed party label of the candidate. The most common entries will be `DEMOCRAT`, `REPUBLICAN`, and `LIBERTARIAN`, with the full detailed names for the various parties. Abbreviated party names should be expanded, e.g., `CON` becomes `CONSTITUTION`, and `PARTY` should generally be omitted. In states like New York with fusion party lines, it contains both parties separated by a forward slash, e.g. `DEMOCRAT / WORKING FAMILIES`. For ballot measures this is left blank.
 
-### stage:
-The stage of the election, can be "pri" for primary, "gen" for general, or "runoff" for a runoff election. 
+------------------------------------------------------------------------
 
-### state: 
-The name of the state in capitals. 
+### party_simplified
 
-### special:
-An indicator for whether the election was a special election, "TRUE" if special, "FALSE" for non-special. 
+**Type:** `string`
 
-### writein:
-An indicator for whether the candidate was a write in, "TRUE" if write in, "FALSE" otherwise. Note that entries noted as "scattering" are write in votes, and should be noted as TRUE. 
+**Example(s):** `DEMOCRAT`, `REPUBLICAN`, `LIBERTARIAN`, `OTHER`, `NONPARTISAN`
 
-### state_po:
-The state postal abbreviation. Merged on from the statecode file.
+**Description:** The uppercase party label of the candidate, standardized to be one of: `DEMOCRAT`, `REPUBLICAN`, `LIBERTARIAN`, `OTHER`, `NONPARTISAN`, or blank (for ballot measures or cases where party cannot be determined).
 
-### state_fips:
-The state's fips code, 2 digits. Merged on from the statecode file.
+------------------------------------------------------------------------
 
-### state_cen: 
-The state's census code. Merged on from the statecode file.
+### mode
 
-### state_ic:
-Merged on from the statecode file.
+**Type:** `string`
 
-### date: 
-The date of the primary/election. Note that there will be some states with different election dates for different offices (i.e. presidential primary v. congressional primary). Should be formatted as %y-%m-%d, such that January 5, 2019 would be "2019-01-05" 
+**Example(s):** `TOTAL`, `ELECTION DAY`, `ABSENTEE`
 
-### magnitude:
-The number of seats to be filled, usually equal to the number of votes an elector can cast for the office. For local offices, the magnitude value may be empty, which signifies that we were not able to directly verify that office's magnitude
+**Description:** The uppercase voting mode for the results, set to `TOTAL` when disaggregation by mode is not reported. For states that do disaggregate by mode, observed values may include but are not limited to `ABSENTEE`, `EARLY MAIL BALLOT`, `MILITARY`, `UOCAVA`, `AFFIDAVIT`, `ABSENTEE/AFFIDAVIT`, `EARLY VOTE`, `ELECTION DAY`, `EMERGENCY`, `IN-PERSON`, `MAIL-IN`, `PROVISIONAL`. With the exception of `TOTAL`, mode is generally not standardized across states.
+
+------------------------------------------------------------------------
+
+### votes
+
+**Type:** `numeric` or `string`
+
+**Example(s):** `42`, `0`, `*`
+
+**Description:** The numeric value of votes for `candidate`. Some small jurisdictions redact vote counts to prevent identifying voters, in which case the value is coded as `*`.
+
+------------------------------------------------------------------------
+
+### county_name
+
+**Type:** `string`
+
+**Example(s):** `ERIE`
+
+**Description:** The uppercase name of the county. Note that for Alaska and Louisiana this value identifies boroughs and parishes, respectively, rather than counties; for Connecticut, this value identifies planning regions.
+
+------------------------------------------------------------------------
+
+### county_fips
+
+**Type:** `string`
+
+**Example(s):** `01002`
+
+**Description:** The Census 5-digit code for a given county where the first two digits are the state FIPS and the last three digits are the county FIPS. For example, Autauga County, AL has a `state_fips` of `01` and its county code is `002` yielding `01002` as the `county_fips`. Note that for Alaska and Louisiana this value identifies boroughs and parishes, respectively, rather than counties; for Connecticut, this value identifies planning regions.
+
+------------------------------------------------------------------------
+
+### jurisdiction_name
+
+**Type:** `string`
+
+**Example(s):** `MIDDLESEX`
+
+**Description:** The uppercase name for the jurisdiction. With the exception of New England states, Wisconsin, and Alaska, these will be the same as `county_name`. For the New England states, these will be the town names.
+
+------------------------------------------------------------------------
+
+### jurisdiction_fips
+
+**Type:** `string`
+
+**Example(s):** `0102700000`, `2501739625`
+
+**Description:** The FIPS code for the jurisdiction. This is `county_fips` with `00000` appended for every state except New England states, Wisconsin, and Alaska, which have ten-digit FIPS codes distinct from counties/boroughs.
+
+------------------------------------------------------------------------
+
+### candidate
+
+**Type:** `string`
+
+**Example(s):** `GEORGE WASHINGTON`, `THOMAS "TOM" JEFFERSON`
+
+**Description:** The candidate name in all uppercase letters in the format `FIRST MIDDLE LAST`. Candidate names are standardized within states according to the following conventions:
+
+1.  Overvotes are coded as `OVERVOTES`.
+2.  Undervotes are coded as `UNDERVOTES`.
+3.  Write-in candidates' names are uppercased but otherwise preserved, this includes preserving running mates.
+4.  When the total write-in votes, rather than individual write-in candidates' totals, are present, they are coded as `WRITE-IN`.
+5.  Middle initials do not include a trailing period. Punctuation appears only when it is part of a first, middle, or last name, e.g. `CONAN O'BRIEN` or `ELIZABETH MOUNTBATTEN-WINDSOR`.
+6.  Nicknames appear in double quotes following the first name, e.g. `TIMOTHEE "TIM" CHALAMET`.
+
+For `US PRESIDENT` in 2024 the following standardized names are used: `DONALD J TRUMP`, `KAMALA D HARRIS`, `CHASE OLIVER`, `CLAUDIA DE LA CRUZ`, `JILL STEIN`, `RANDALL TERRY`, `PETER SONSKI`, `ROBERT F KENNEDY`, `CORNEL WEST`, `JOSEPH KISHORE`, `RACHELE FRUIT`. Across states we only standardize `candidate` for `US PRESIDENT`.
+
+------------------------------------------------------------------------
+
+### district
+
+**Type:** `string`
+
+**Example(s):** `002`, `6, seat C`, `STATEWIDE`
+
+**Description:** The district identifier for the office following these conventions:
+- For state legislative and US House races it is zero-padded to 3 digits, i.e., State Senate District 3 would be equal to `003`. For at-large seats it is set to `AT-LARGE`.
+- For sub-state offices with specific sub-state units (districts, wards, seats, zones, etc.), it contains the entire unique identifier standardized within the state. For example, State District Court of the Sixth District and seat C would be `6, seat C`, and a seat in the Fifth District would be `5, seat A`.
+- For candidates with statewide jurisdictions it is set to `STATEWIDE`; this includes at-large legislative offices.
+- For races without district info, the field is left blank.
+
+------------------------------------------------------------------------
+
+### dataverse
+
+**Type:** `string`
+
+**Example(s):** `PRESIDENT`, `SENATE`, `HOUSE`, `STATE`, `LOCAL`
+
+**Description:** The Harvard Dataverse repository containing the data, based on `office`. The allowed values are: 
+- `PRESIDENT` for US Presidential races. 
+- `SENATE` for US Senate races. 
+- `HOUSE` for US House races.
+- `STATE` for state-level executive, legislative, judicial races, or statewide ballot questions.
+- `LOCAL` for local contests.
+
+For rows that include ancillary information about the contest (registered voters, ballots cast, total votes, etc.), the value is left blank.
+
+------------------------------------------------------------------------
+
+### year
+
+**Type:** `numeric`
+
+**Example(s):** `2024`
+
+**Description:** The year the election took place.
+
+------------------------------------------------------------------------
+
+### stage
+
+**Type:** `string`
+
+**Example(s):** `GEN`, `PRI`, `RUNOFF`
+
+**Description:** The stage of the election: `PRI` for primary, `GEN` for general, or `RUNOFF` for a runoff election.
+
+------------------------------------------------------------------------
+
+### state
+
+**Type:** `string`
+
+**Example(s):** `NEW YORK`
+
+**Description:** The name of the state in uppercase.
+
+------------------------------------------------------------------------
+
+### special
+
+**Type:** `boolean`
+
+**Example(s):** `TRUE`, `FALSE`
+
+**Description:** An indicator for whether the election was a special election, `TRUE` if special, `FALSE` for non-special.
+
+------------------------------------------------------------------------
+
+### writein
+
+**Type:** `boolean`
+
+**Example(s):** `TRUE`, `FALSE`
+
+**Description:** An indicator that is `TRUE` if the observation is for write-ins or a write-in candidate, `FALSE` otherwise. Note that `SCATTERING` is treated as a write-in.
+
+------------------------------------------------------------------------
+
+### state_po
+
+**Type:** `string`
+
+**Example(s):** `AL`, `NY`
+
+**Description:** The state's postal abbreviation.
+
+------------------------------------------------------------------------
+
+### state_fips
+
+**Type:** `string`
+
+**Example(s):** `01`, `23`
+
+**Description:** The state's FIPS code, zero-padded to be 2 digits.
+
+------------------------------------------------------------------------
+
+### state_cen
+
+**Type:** `string`
+
+**Example(s):** `01`, `21`
+
+**Description:** The state's Census code.
+
+**Internal Notes:**
+- Merged from `_help_files/`
+------------------------------------------------------------------------
+
+### state_ic
+
+**Type:** `string`
+
+**Example(s):** `41`, `13`
+
+**Description:** The state's IC code.
+
+------------------------------------------------------------------------
+
+### date
+
+**Type:** `string`
+
+**Example(s):** `2024-11-05`
+
+**Description:** The date of the election in the format `%Y-%m-%d`.
+
+------------------------------------------------------------------------
+
+### magnitude
+
+**Type:** `numeric`
+
+**Example(s):** `2`
+
+**Description:** The number of candidates a voter may select for a given office. In most cases this will be `1`, however city councils and other local bodies often have magnitudes of `2` or more. For some offices, this may be empty, which signifies that we were not able to directly verify the magnitude.
 
 ---
 

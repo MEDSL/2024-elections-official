@@ -1,15 +1,14 @@
 # 2024-elections-official
 
-## IMPORTANT
+This is the MIT Election Data + Science Lab repository for precinct-level election returns from the 2024 General Election in the United States. If you notice any issues in our results, please open an issue in this repository. *We ask that you triple check that potential issues exist in the repository's data and are not an artifact of the user's wrangling.*
 
-As of April 17, 2026 this repository contains cleaned precinct-level returns for all 50 states + DC. These data have passed our initial round of quality assurance and are now in the final round of QA. **These data may contain errors, please create an issue if data errors are discovered once you are able to confirm it is a genuine error.**
-
-## Repository info
-This is the MEDSL repository for election returns from the 2024 General Election in the United States. We have begun compiling precinct-level election results. If you notice any issues in our results, please open an Issue in this repository.
-
-## General usage notes
+## Usage
 ### Methods and accuracy
 For any questions about how we clean and Quality Assure these data, and how accurate they are, please consult this paper, which answers those questions for our 2016, 2018, and 2020 precinct data efforts: https://www.nature.com/articles/s41597-022-01745-0.
+
+For more of our election return data, visit [our website](https://electionlab.mit.edu/data) or the [Harvard Dataverse](https://dataverse.harvard.edu/dataverse/medsl_election_returns).
+
+We strongly encourage a careful reading of the below and our [codebook](codebook.md) before you begin working with the data.
 
 ### Warnings
 * In general, users need to exercise real caution when computing descriptive statistics. Please make sure you understand exactly which rows belong in the computation you're performing. Here are two of the most common issues:
@@ -17,6 +16,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
    * We typically retain exactly the modes that states report. This can lead to double-counting if users do not select the correct modes, for example if modes are split apart *and* a mode value of `TOTAL` is included. Users should make sure that any analysis includes votes of each mode once.
 * While we attempt to verify every value of every variable, `magnitude` values in particular may be approximate for local-level offices. Please double-check these values before relying on them. We are also still working to make sure that the `NONPARTISAN` value of the party fields is propagated correctly to local offices.
 * `mode` values typically retain the state's original classification. These original data sources may not identify modes in a way that is consistent across jurisdictions, and one jurisdiction may report more granularly or more accurately than another. For example, `UOCAVA` ballots may be classed as `ABSENTEE` without any means to disaggregate them.
+* In some small jurisdictions in California, Kansas, Nevada, and New Mexico, vote counts are not published due to privacy concerns. In these cases `votes = "*"`.
 
 ## State-specific information
 ### Alabama
@@ -33,6 +33,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *Added:* 2026-03-20
 *[Source](https://github.com/openelections/openelections-data-az/tree/master/2024/General)*  
 
+**Notes:** `STATE HOUSE` races in Pima County are missing values for `district` due to limitations of the source data.
+
 ### Arkansas
 *Added:* 2025-11-07  
 *[Source](https://results.enr.clarityelections.com/AR/122502/web.345435/#/reporting)*  
@@ -42,8 +44,6 @@ For any questions about how we clean and Quality Assure these data, and how accu
 *[Source](https://statewidedatabase.org/election.html)*  
 
 **Notes:** 
-
-Cases where votes were suppressed for privacy or other reporting reasons are represented by three asterisks: `***`
 
 With regards to `precinct` codes:
 
@@ -62,7 +62,7 @@ From the Statewide Database's FAQ we have:
 `precinct` ending in `"B"` or `"C"`
 - We believe these denote later supplemental batches of votes that are provisionals or VBM dropped off on Election Day.
 
-Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we were told that these suffixes on precinct names are determined jurisdiction by jurisdiction and are not necessarily standardized across states. Our vote aggregation checks are consistent with the above but users should take great care when using these data.
+Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we were told that these suffixes on precinct names are determined jurisdiction by jurisdiction and are not necessarily standardized across states. Our vote aggregation checks are consistent with the above but users should be cautious when using these data and assuming anything about the mode of voting.
 
 ### Colorado
 *Added:* 2025-10-24  
@@ -95,7 +95,7 @@ Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we we
 *[Source (precinct-to-county crosswalk)](https://elections.hawaii.gov/resources/districts-and-precincts/)*  
 
 ### Idaho
-*Added: 2025-12-17*  
+*Added:* 2025-12-17
 *[Source](https://voteidaho.gov/election-results/)*  
 
 ### Illinois
@@ -107,7 +107,7 @@ Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we we
 *[Source (official state data)](https://enr.indianavoters.in.gov/site/index.html)*  
 *[Source (supplemental OpenElections data)](https://github.com/openelections/openelections-data-in/tree/master/2024/counties)*  
 
-**Warning:** Major caveats apply to Indiana’s data completeness and accuracy. See repository notes for missing counties and aggregation limitations.
+**Warning:** Major caveats apply to Indiana’s data completeness and accuracy. Senate and Governor totals are overreported because some county sources appear to fold straight-party votes into candidate totals, and some counties reuse the same precinct label for distinct ballot batches so precinct names are not always unique identifiers.
 
 ### Iowa
 *Added:* 2025-11-03 
@@ -117,11 +117,9 @@ Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we we
 *Added:* 2025-07-23  
 *[Source](https://sos.ks.gov/elections/election-results.html)*  
 
-**Notes:** A `*` indicates masked vote totals to preserve voter privacy.
-
 ### Kentucky
-*Added:*  
-*[Source]()*  
+*Added:*  2025-05-06
+*[Source](https://elect.ky.gov/results/2020-2029/Pages/2024.aspx)*  
 
 ### Louisiana
 *Added:*  2026-01-20
@@ -133,7 +131,13 @@ Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we we
 *Added:* 2025-10-27  
 *[Source](https://www.maine.gov/sos/cec/elec/results/results24.html)*  
 
-**Notes:** For some observations `jurisdiction_fips` was unable to be determined.
+**Notes:** 
+
+For some observations, `jurisdiction_fips` was unable to be determined. 
+
+Maine precinct totals are first-round counts and will not match final certified presidential/Senate totals because of ranked-choice redistribution.
+
+State House district 021 is missing candidate Marianna Reeves because she is absent from the raw data.
 
 ### Maryland
 *Added:* 2025-11-13  
@@ -147,6 +151,8 @@ Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we we
 *Added:* 2025-10-24  
 *[Source](https://mielections.us/election/results/)*  
 
+**Notes:** There are several cases of negative vote values that appear to be county-level correction artifacts, these were retained as reported.
+
 ### Minnesota
 *Added:* 2025-02-13  
 *[Source](https://electionresults.sos.mn.gov/Select/MediaFiles/Index?ersElectionId=170)*  
@@ -158,6 +164,8 @@ Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we we
 ### Missouri
 *Added:* 2025-10-24  
 *[Source](https://enr.sos.mo.gov/)*  
+
+**Notes:** Kansas City rows use synthetic county_fips = 36000 as a cross-county placeholder because Kansas City spans multiple counties.
 
 ### Montana
 *Added:* 2024-12-16  
@@ -189,14 +197,14 @@ Upon reaching out to [Statewide Database](https://statewidedatabase.org/), we we
 - https://www.livevoterturnout.com/ENR/salemnjenr/7/en/Index_7.html
 - https://gloucestercountynj.gov/1252/Previous-Election-Results
 
+**Notes:** 
 
-**Notes:** In 2024 NJ reported its data at the election district level but also included totals at the municipal level. For instance, an observation with `precinct = "Cliffside Park"` provides the total votes across "Cliffside Park 01", "Cliffside Park 02", etc. Care should be taken to not double count votes by including both the municipal totals and election district vote counts.
+In 2024 NJ reported its data at the election district level but also included totals at the municipal level. For instance, an observation with `precinct = "Cliffside Park"` provides the total votes across "Cliffside Park 01", "Cliffside Park 02", etc. Care should be taken to not double count votes by including both the municipal totals and election district vote counts. Bergen and Gloucester `TOTAL` rows appear to double-count, while Burlington, Cumberland, Essex, and Mercer are missing `TOTAL rows`, so statewide sums using `TOTAL` or all modes require caution
 
 ### New Mexico
 *Added:* 2025-07-23  
 *[Source](https://electionresults.sos.nm.gov/)*  
 
-**Notes:** A `*` indicates masked vote totals for privacy.
 
 ### New York
 *Added:* 2026-03-24
@@ -210,7 +218,6 @@ New York is one of the most challenging states to gather and standardize precinc
 * Negative undervotes: There are two cases of undervotes being reported as `-2` in the raw Albany County data. We reached out to the Albany County Board of Elections who explained this as a system-balancing mechanism used when recorded votes slightly exceed the total ballots cast (e.g., due to voters sending in an absentee ballot after voting in person or by affidavit). This adjustment does not meaningfully impact vote totals and so is kept as it is reported in the raw data.
 * Jefferson and Dutchess County have minor vote shortfalls/missing precincts due to "protected precincts" where data is suppressed for privacy.
 * Herkimer County is missing results for `office = "State Proposal One"` in the raw data from the county.
-
 
 ### North Carolina
 *Added:* 2024-12-16  
@@ -237,8 +244,8 @@ New York is one of the most challenging states to gather and standardize precinc
 *[Source](https://www.pa.gov/agencies/dos/resources/voting-and-elections-resources/voting-and-election-statistics/bulk-election-data.html#accordion-b33bb36a11-item-d105bc02cf)*  
 
 ### Rhode Island
-*Added:*  
-*[Source]()*  
+*Added:* 2025-11-10
+*[Source](https://elections.ri.gov/elections/previous-election-results)*  
 
 ### South Carolina
 *Added:* 2025-05-05  
@@ -254,8 +261,8 @@ New York is one of the most challenging states to gather and standardize precinc
 *[Source](https://sos.tn.gov/elections/results)*  
 
 ### Texas
-*Added:*  
-*[Source]()*  
+*Added:* 2025-10-24
+*[Source](https://data.capitol.texas.gov/topic/elections)*  
 
 ### Utah
 *Added:* 2025-11-07  
@@ -280,6 +287,8 @@ New York is one of the most challenging states to gather and standardize precinc
 ### Wisconsin
 *Added:* 2025-11-07  
 *[Source](https://elections.wi.gov/elections/election-results#accordion-11951)*  
+
+**Notes:** `VILLAGE OF LISBON` rows are missing jurisdiction_name and jurisdiction_fips in the source data and could not be resolved cleanly.
 
 ### Wyoming
 *Added: 2025-12-17*  
