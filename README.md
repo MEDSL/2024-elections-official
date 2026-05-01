@@ -25,7 +25,7 @@ We strongly encourage a careful reading of the below and our [codebook](codebook
 *Added:* 2025-10-31  
 *[Source](https://www.sos.alabama.gov/alabama-votes/voter/election-data)*  
 
-*Note:* Alabama gives voters an option to check one box to cast a straight ticket ballot (e.g. vote for all Republican candidates). We denote this as `office = "STRAIGHT PARTY"`.
+*Notes:* Alabama gives voters an option to check one box to cast a straight ticket ballot (e.g. vote for all Republican candidates). We denote this as `office = "STRAIGHT PARTY"`.
 
 ### Alaska
 *Added:* 2025-11-19  
