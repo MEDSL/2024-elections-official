@@ -32,7 +32,7 @@ We strongly encourage a careful reading of the below and our [codebook](codebook
 *[Source](https://www.elections.alaska.gov/election-results/e/?id=24genr)*  
 
 ### Arizona
-*Added:* 2026-03-20 
+*Added:* 2026-03-20  
 *[Source](https://github.com/openelections/openelections-data-az/tree/master/2024/General)*  
 
 **Notes:** `STATE HOUSE` races in Pima County are missing values for `district` due to limitations of the source data.
