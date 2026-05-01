@@ -1,6 +1,6 @@
 # 2024-elections-official
 
-This is the MIT Election Data + Science Lab repository for precinct-level election returns from the 2024 General Election in the United States. See our [2024 precincts Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PRRM1V).
+This is the MIT Election Data + Science Lab repository for precinct-level election returns from the 2024 General Election in the United States. See our [2024 precincts Harvard Dataverse](https://dataverse.harvard.edu/dataverse/2024_precincts) for information on how to cite these data and for datasets broken out by office.
 
 If you notice any issues in our results, please open an issue in this repository. **We ask that you triple check that potential issues exist in the repository's data and are not an artifact of the way that you are processing the data.**
 
