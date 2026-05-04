@@ -4,6 +4,10 @@ This is the MIT Election Data + Science Lab repository for precinct-level electi
 
 If you notice any issues in our results, please open an issue in this repository. **We ask that you triple check that potential issues exist in the repository's data and are not an artifact of the way that you are processing the data.**
 
+## Contributors
+
+These data are the culmination of a multi-year effort by a team of MEDSL research staff as well as MIT graduate and undergraduate students. We thank the following people for their contributions to the 2024 release: Charles Stewart III, Samuel Baltz, Zayne Sember, Honor Durham, Sina Shaikh, Ning Soong, Zachary Djanogly Garai, Mason Reece, Garima Rastogi, Caitlin Donovan, Elaine Zhao, Kevin Acevedo. We also thank Arianna Conte, Claire DeSoi, Jason Rhode, and Rachel Wright for their support as MEDSL staff.
+
 ## Usage
 ### Methods and accuracy
 For any questions about how we clean and Quality Assure these data, and how accurate they are, please consult this paper, which answers those questions for our 2016, 2018, and 2020 precinct data efforts (see Appendix E for precinct data processing methods): https://arxiv.org/abs/2106.04570
