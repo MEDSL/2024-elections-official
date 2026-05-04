@@ -6,7 +6,7 @@ If you notice any issues in our results, please open an issue in this repository
 
 ## Contributors
 
-These data are the culmination of a multi-year effort by a team of MEDSL research staff as well as MIT graduate and undergraduate students. We thank the following people for their contributions to the 2024 release: Charles Stewart III, Samuel Baltz, Zayne Sember, Honor Durham, Sina Shaikh, Ning Soong, Zachary Djanogly Garai, Mason Reece, Garima Rastogi, Caitlin Donovan, Elaine Zhao, Kevin Acevedo. We also thank Arianna Conte, Claire DeSoi, Jason Rhode, and Rachel Wright for their support as MEDSL staff.
+These data are the culmination of a multi-year effort by a team of MEDSL research staff as well as MIT graduate and undergraduate students. We thank the following people for their contributions to the 2024 release: Charles Stewart III, Samuel Baltz, Zayne Sember, Honor Durham, Sina Shaikh, Ning Soong, Zachary Djanogly Garai, Mason Reece, Garima Rastogi, Caitlin Donovan, Elaine Zhao, Kevin Acevedo. We also thank Arianna Conte, Claire DeSoi, Sean Greene, Jason Rhode, and Rachel Wright for their support as MEDSL staff.
 
 ## Usage
 ### Methods and accuracy
